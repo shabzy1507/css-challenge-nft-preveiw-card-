@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://shabzy1507.github.io/css-challenge-nft-preveiw-card-/)
 
 ## My process
 
