@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .attribution,
+      .attribution a {
+        font-size: 18px;
+        text-align: left;
+        color: hsl(209, 12%, 59%);
+        transition: all 0.4s;
+      }
+      .attribution a {
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid hsl(209, 12%, 59%);
+      }
+      .attribution a:hover {
+        border: none;
+      }
+      body {
+        background-color: hsl(217, 54%, 11%);
+      }
+      .container {
+        width: 400px;
+        background-color: hsl(216, 50%, 16%);
+        margin: 70px auto;
+        padding: 40px;
+        border-radius: 12px;
+        font-family: "outfit", sans-serif;
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+        box-shadow: 20px 20px 30px 0 hsla(216, 51%, 16%, 0.619);
+        transition: all 0.6s;
+      }
+      .container:hover {
+        transform: translateY(-20px);
+        box-shadow: 0px 20px 30px 0 hsla(216, 51%, 16%, 0.619);
+      }
+      .text-box,
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .card-title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .card-details {
+        line-height: 1.6;
+      }
+      .card-price {
+        display: flex;
+        justify-content: space-between;
+      }
+      .price,
+      .warning,
+      .author-box {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .price {
+        color: hsl(178, 100%, 50%);
+      }
+      .author-box {
+        border-top: 2px solid hsl(215, 32%, 27%);
+        padding-top: 25px;
+        gap: 15px;
+      }
+      .author-name {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-box">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="picture of a glowing tube"
+          width="100%"
+          style="border-radius: 12px"
+        />
+      </div>
+      <div class="text-box">
+        <p class="card-title">Equilibrium #3429</p>
+        <p class="card-details">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-price">
+          <span class="price"
+            ><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH</span
+          >
+          <span class="warning"
+            ><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </span>
+        </div>
+        <div class="author-box">
+          <img
+            src="images/image-avatar.png"
+            alt="picture of Jules Wyvern"
+            width="35px"
+            style="border: 1px solid #fff; border-radius: 100%"
+          />
+          <p>Creation of<span class="author-name"> Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/shabzy1507" target="_blank">Oyetola sodiq</a>.
+    </div>
+  </body>
+</html>
